@@ -104,6 +104,7 @@
         background-size: cover;
         background-position: center center;
         text-shadow: 1px 1px 1px #012392;
+        font-family: 'Asap Condensed', sans-serif;
     }
 
     div#section1 h2{
@@ -115,6 +116,7 @@
     }
 
     div#section2 {
+        font-family: 'Asap Condensed', sans-serif;
         background-image: url({{URL::asset('imgs/bg3.jpg')}});
         -webkit-background-size: cover;
         background-size: cover;
@@ -177,25 +179,19 @@
         overflow: hidden;
     }
 
-    div#section4 {
-        background-image: url({{URL::asset('imgs/bg5.jpg')}});
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-position: center center;
-    }
 
-    div#section5 {
+    div#section4 {
         background-color: #013b5f;
     }
 
-    div#section5 h5 {
+    div#section4 h5 {
         position: relative;
         width: fit-content;
         margin: auto;
         margin-bottom: 28px;
     }
 
-    div#section5 h5:before {
+    div#section4 h5:before {
         position: absolute;
         content: '';
         height: 2px;
@@ -537,15 +533,9 @@
         </div>
     </div>
 
-    <div class="section" id="section4">
-        <div class="intro">
-            <h1>Scroll Down</h1>
-            <p>And it will loop to the first section</p>
-        </div>
-    </div>
 
     {{--phần slider thông tin công ty--}}
-    <div class="section" id="section5">
+    <div class="section" id="section4">
 
         <div class="container">
             <div class="row">
