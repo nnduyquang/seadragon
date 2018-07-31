@@ -13,15 +13,15 @@
 
     .nhan-tt-duan-box {
         width: 60%;
+        margin: auto;
         height: fit-content;
-        margin: 10% 20%;
         z-index: 22;
+        overflow: scroll;
         /*background-color: #fff;*/
     }
 
-    .nhan-tt-duan-box h5 {
+    #h5-danBox {
         font-size: 38px;
-        margin: auto;
         /*background-color: #fff;*/
     }
 
@@ -32,7 +32,7 @@
         z-index: 20;
         font-size: 30px;
         top: 5%;
-        right: 20%;
+        right: 10%;
         display: none;
     }
 
@@ -101,6 +101,11 @@
         background-color: #f3ca0d;
     }
 
+    @media screen and (max-width: 999px) and (min-width: 652px){
+
+
+    }
+
 </style>
 
 <div id="btn-NhanThongTinDuAn">
@@ -108,10 +113,10 @@
         <a href="javascript:void(0)"><i class="far fa-times-circle"></i>
         </a>
     </div>
-    <div class="nhan-tt-duan-box position-relative text-center">
-        <H5 id="h5-danBox" class="text-white">NHẬN THÔNG TIN DỰ ÁN</H5>
-        <form action="/action_page.php">
+    <div class="nhan-tt-duan-box position-relative text-center d-flex align-items-center">
 
+        <form action="/action_page.php">
+            <H5 id="h5-danBox" class="text-white">NHẬN THÔNG TIN DỰ ÁN</H5>
             <input class="ttda_input" type="text" name="fname" placeholder="Họ và tên (*)">
             <input class="ttda_input" type="text" name="lname" placeholder="Email (*)">
             <br>

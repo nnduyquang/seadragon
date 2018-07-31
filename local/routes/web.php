@@ -4,6 +4,20 @@
 Route::get('/', function () {
     return view('frontend.home.index');
 });
+
+Route::get('/thong-tin-du-an-sea-dragon.html', function () {
+    return view('frontend.thongtin_duan.index');
+});
+
+
+Route::get('/chitiet.html', function () {
+    return view('frontend.chitiet.index');
+});
+
+Route::get('/vitri.html', function () {
+    return view('frontend.vitri.index');
+});
+
 Route::post('/tim-kiem','FrontendController@getSearch')->name('search');
 
 

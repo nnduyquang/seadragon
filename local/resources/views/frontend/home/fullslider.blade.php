@@ -24,7 +24,7 @@
         z-index: 21;
         width: 260px;
         height: auto;
-
+        transition: .3s;
     }
 
     div.btn-ttdu {
@@ -63,30 +63,33 @@
     }
 
     div#section0 {
-        background-image: url({{URL::asset('imgs/bg11.jpg')}});
+        background-image: url({{URL::asset('imgs/111a-min_opt.jpg')}});
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center center;
     }
 
-    div#section0 h5,div#section0 h6{
+    div#section0 h5, div#section0 h6 {
         color: white;
-        text-shadow: 1px 1px 10px #012392;
+        text-shadow: 1px 1px 8px #0b2e13;
         font-size: 6vw;
         margin: auto;
-        font-family: 'Asap Condensed', sans-serif;
-    }
-    div#section0 h6{
-        font-size: 3vw;
-    }
-    div#section0 h5{
 
+    }
+
+    div#section0 h6 {
+        font-size: 2vw;
+        color: white;
+    }
+
+    div#section0 h5 {
+        font-family: 'Asap Condensed', sans-serif;
         position: relative;
         width: fit-content;
         margin-bottom: 10px;
     }
 
-    div#section0 h5:before{
+    div#section0 h5:before {
         position: absolute;
         content: '';
         height: 2px;
@@ -99,20 +102,20 @@
     }
 
     div#section1 {
-        background-image: url({{URL::asset('imgs/Biet-thu.jpg')}});
+        background-image: url({{URL::asset('imgs/1499396844a138img.png')}});
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center center;
-        text-shadow: 1px 1px 1px #012392;
+        text-shadow: 1px 1px 8px #0b2e13;
         font-family: 'Asap Condensed', sans-serif;
     }
 
-    div#section1 h2{
-       font-size: 38px;
+    div#section1 h5 {
+        font-size: 8vh;
     }
 
-    div#section1 p{
-        font-size: 20px;
+    div#section1 p {
+        font-size: 16px;
     }
 
     div#section2 {
@@ -122,21 +125,22 @@
         background-size: cover;
         background-position: center center;
         color: white;
-        text-shadow: 1px 1px 1px #012392;
+        text-shadow: 1px 1px 33px #000;
     }
 
-    div#section2 p{
-        font-size: 20px;
+    div#section2 p {
+        font-size: 16px;
+        text-shadow: 1px 1px 13px #000;
     }
 
     div#section2 h5 {
         width: fit-content;
-        font-size: 36px;
+        font-size: 8vh;
         position: relative;
         width: fit-content;
         margin: auto;
         padding-bottom: 20px;
-        text-shadow: 1px 1px 1px #012392;
+        text-shadow: 1px 1px 1px #0b2e13;
         z-index: 20;
     }
 
@@ -150,21 +154,21 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 100;
-        text-shadow: 1px 1px 1px #012392;
+        text-shadow: 1px 1px 1px #0b2e13;
     }
 
-    div#section2 a {
+    div#section0 a, div#section2 a, div#section1 a {
         border: 1px solid white;
         color: white;
         font-size: 13px;
         padding: 8px 10px;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(32, 57, 2, 0.9);
         font-weight: 600;
         transition: .3s;
         text-shadow: 1px 1px 1px #012392;
     }
 
-    div#section2 a:hover {
+    div#section0 a:hover, div#section2 a:hover, div#section1 a:hover {
         text-decoration: none;
         color: white;
         background-color: #f3ca0d;
@@ -178,7 +182,6 @@
         background-position: center center;
         overflow: hidden;
     }
-
 
     div#section4 {
         background-color: #013b5f;
@@ -245,10 +248,11 @@
 
     img.arrow-down {
         position: absolute;
-        left: 48.5%;
+        left: 48.4%;
         transform: translateX(-50%);
         width: 38px;
         bottom: 0;
+        transition: .3s;
     }
 
     div.menu-content {
@@ -262,7 +266,7 @@
 
     div.menu-content ul {
         list-style-type: none;
-        margin-top: 60px;
+        margin-top: 38px;
         padding: 0;
 
     }
@@ -302,9 +306,10 @@
     }
 
     div.ttdan-gia {
-        width: 50%;
-        height: 70%;
-        margin: 12% 25%;
+        height: auto;
+        width: 60%;
+        margin: auto;
+        transition: .3s;
     }
 
     img.img-baogia {
@@ -368,64 +373,107 @@
         background-size: 100% 100%;
         background-position: center center;
         background-size: contain;
-        object-fit: cover; /*cover video background */
+        object-fit: cover;
         z-index: 3;
     }
 
-    /* Layer with position absolute in order to have it ver the video
-    * --------------------------------------- */
+
     #section3 .layer {
         position: absolute;
         z-index: 14;
+        text-align: center;
         width: 100%;
         left: 0;
         top: 73%;
         -webkit-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        transition: .3s;
     }
 
-    /*solves problem with overflowing video in Mac with Chrome */
-    /* Bottom menu
-    * --------------------------------------- */
+
     #infoMenu li a {
         color: #fff;
     }
 
-    /* Hiding video controls
-    * See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
-    * --------------------------------------- */
-    video::-webkit-media-controls {
-        display: none !important;
-    }
 
-    .play-stop-button i{
+
+    .play-stop-button i {
         color: #1b1e21;
         opacity: 0.5;
         transition: .5s;
 
     }
-    .play-stop-button:hover{
-    text-decoration: none;
+
+    .play-stop-button:hover {
+        text-decoration: none;
     }
-    .play-stop-button:hover i{
+
+    .play-stop-button:hover i {
         color: #ffffff;
         opacity: 1;
 
     }
 
-    #trang_dau{
+    #trang_dau {
         transition: .3s;
         opacity: 0;
     }
 
+
+    @media screen and (max-width: 999px) and (min-width: 652px){
+
+        div#trang_dau{
+            padding-bottom: 38px;
+        }
+
+        div#section2-slide2{
+            padding-bottom: 45px;
+        }
+
+        div#section3-slide{
+            padding-bottom: 58px;
+        }
+
+        img.logo{
+            width: 168px;
+            height: auto;
+        }
+
+        .ttdan-gia{
+            width: 70%;
+            height: auto;
+        }
+
+        #section3 .layer {
+            top: 53%;
+
+        }
+
+        img.arrow-down {
+            left: 48%;
+            width: 26px;
+        }
+
+        #h5-danBox {
+            font-size: 30px;
+            margin-bottom: 8px;
+            /*background-color: #fff;*/
+        }
+    }
+
+
+
 </style>
 <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Saira+Extra+Condensed" rel="stylesheet">
+
 {{--Phần báo giá mừng khai trương sao này thai vô bằng báo giá--}}
-<div class="ttdan-form">
+
+
+<div class="ttdan-form text-center d-flex align-items-center">
 
     <div class="ttdan-gia animated fadeInUp delay-1s">
-        <img class="img-baogia" src="{{URL::asset('imgs/banner1.png')}}" alt=""
+        <img class="img-baogia" src="{{URL::asset('imgs/banner1.jpg')}}" alt=""
              style="width: 100%;height: auto;">
     </div>
 
@@ -444,9 +492,7 @@
         <img src="{{URL::asset('imgs/logo/logo2.png')}}" alt="" class="logo animated fadeIn slower">
 
         <div data-menuanchor="firstPage" class="active d-flex align-items-center">
-            <a href="#firstPage" style="color: white">
-                Copyright © 2018 by <b>Smartlinks</b>. All Right Reserved.
-            </a>
+                Copyright © 2018 by <b>	&nbsp; Smartlinks</b>.
             <a class="scnw ml-3" href=""><i class="fab fa-facebook-f"></i></a>
             <a class="scnw ml-3" href=""><i class="fab fa-youtube"></i></a>
         </div>
@@ -455,7 +501,7 @@
         <div class="menu-content">
             <ul>
                 <li id="menu-01"><a class="active" href="">TRANG CHỦ</a></li>
-                <li id="menu-02" class=""><a href="">GIỚI THIỆU</a></li>
+                <li id="menu-02" class=""><a href="thong-tin-du-an-sea-dragon.html">GIỚI THIỆU</a></li>
                 <li id="menu-03"><a href="">VỊ TRÍ</a></li>
                 <li id="menu-04"><a href="">GIÁ CHƯƠNG TRÌNH ƯU ĐÃI</a></li>
                 <li id="menu-05"><a href="">PHÁP LÝ THANH TOÁN</a></li>
@@ -485,19 +531,23 @@
 
     <div class="section position-relative" id="section0">
         <div id="trang_dau">
-        <H5>SEA DRAGON ĐỊA THẾ VÀNG</H5>
-        <h6>VỊ TRÍ VÀNG BÀ RỊA VŨNG TÀU</h6>
+            <H5><span style="color: #e6c953;">SEA DRAGON</span> ĐỊA THẾ VÀNG</H5>
+            <h6 class="mb-4">KHÔNG GIAN NGHĨ DƯỠNG - THIÊN ĐƯỜNG DU LỊCH</h6>
+            <a class="mt-5" href="thong-tin-du-an-sea-dragon.html">XEM CHI TIẾT</a>
         </div>
     </div>
 
     <div class="section" id="section1">
         <div id="section2-slide2" class="intro">
             <div class="row">
-                <div class="col-md-12 text-right pr-5">
-            <h2>VỊ TRÍ DỰ ÁN</h2>
-            <p class="">Go to the first section and scroll up or to the <br>
-                last one and scroll down
-                to see how it works.</p>
+                <div class="col-md-12 text-center">
+                    <div class="">
+                        <H5><span style="color: #e6c953;">SEA DRAGON</span> VỊ TRÍ TIỀM NĂNG</H5>
+                        <p class="">Sea Dragon tọa lạc về Phía Đông Nam của trung tâm hành chính tỉnh,
+                            <br> nằm trong bán kính 5km được quy hoạch về khu dân cư đô thị phục vụ cho sự phát triển
+                            <br>lên đô thị loại 1 của thành phố. ...</p>
+                        <a href="">XEM CHI TIẾT</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -505,13 +555,13 @@
 
     <div class="section position-relative" id="section2">
         <div id="section3-slide" class="intro position-relative">
-
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center" style="margin: auto">
-                        <h5>CHƯƠNG TRÌNH ỮU ĐÃI</h5>
-                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Aliquid amet consequatur dicta, dignissimos doloribus est harum !</p>
+                        <h5>CHƯƠNG TRÌNH ƯU ĐÃI</h5>
+                        <p class="">Trã trước 30% hỗ trợ vai 70% từ ngân hàng <br>
+                        Chương trình được áp dụng từ tháng 08-1028 đến tháng 12-2018 <br>
+                        Ữu đãi nội thất cho 50 khách hàng đầu tiên.</p>
                         <a href="">XEM CHI TIẾT</a>
                     </div>
                 </div>
@@ -521,7 +571,7 @@
 
 
     <div class="section" id="section3">
-        <video id="myVideo" loop data-autoplay controls>
+        <video id="myVideo" loop data-autoplay>
             <source src="http://sky89.vn/download/PHIM CHINH THUC.mp4"
                     type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
         </video>
@@ -540,16 +590,9 @@
         <div class="container">
             <div class="row">
                 <div id="about_comp2" class="col-md-12 text-center animated fadeInDown">
-                    <div>
-                        <img src="http://sky89.vn/pictures/catalog/contact/angia_logo.svg" alt=""
-                             style="width: 30%;height: auto">
-                        <img src="http://sky89.vn/pictures/catalog/contact/coteccons_logo.svg" alt=""
-                             style="width: 20%;height: auto">
-                    </div>
-                    <img src="http://sky89.vn/pictures/catalog/contact/distribution_logo.svg" alt=""
-                         style="width: 50%;height: auto">
+                    <img src="{{URL::asset('imgs/logo.png')}}" alt="" class="img-vap">
                 </div>
-                <div id="about_comp" class="col-md-12 text-center text-white pb-5">
+                <div id="about_comp" class="col-md-12 text-center text-white pb-5 mt-3">
                     <h5>TẬP ĐOÀN VẠN AN PHÁT</h5>
                     <p>160 Võ Thị Sáu, P6, Q3, TP HCM <br>
                         Điện Thoại: 0909 09 09 09 Email:Info@vananphat.com.vn</p>
@@ -564,8 +607,5 @@
 
 @section('script')
 
-    <script>
-
-    </script>
 
 @stop
