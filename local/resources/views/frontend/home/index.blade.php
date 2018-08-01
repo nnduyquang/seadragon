@@ -1,14 +1,15 @@
 @extends('frontend.master')
 
 @section('bodycontent')
+
     @include('frontend.home.btn_NhanThongTinDuAn')
     @include('frontend.home.fullslider')
+
 @stop
 @section('script-private')
     <script>
         $(document).ready(function () {
-
-
+            
             $('.fa-play-circle').css('display','none')
             //Script hiện bản thoong báo đầu trang page load
             $('.tat-baogia').css('display','block')
@@ -55,12 +56,12 @@
 
         //Script load hiện menu là đóng menu
         $(".fa-bars").click(function () {
-            $('#menu-01').addClass(' '+'animated fadeInRight delay-11s')
-            $('#menu-02').addClass(' '+'animated fadeInRight delay-12s')
-            $('#menu-03').addClass(' '+'animated fadeInRight delay-13s')
-            $('#menu-04').addClass(' '+'animated fadeInRight delay-14s')
-            $('#menu-05').addClass(' '+'animated fadeInRight delay-15s')
-            $('#menu-06').addClass(' '+'animated fadeInRight delay-16s')
+            $('#menu-01').addClass(' '+'animated fadeInRight delay-300ms')
+            $('#menu-02').addClass(' '+'animated fadeInRight delay-350ms')
+            $('#menu-03').addClass(' '+'animated fadeInRight delay-400ms')
+            $('#menu-04').addClass(' '+'animated fadeInRight delay-450ms')
+            $('#menu-05').addClass(' '+'animated fadeInRight delay-500ms')
+            $('#menu-06').addClass(' '+'animated fadeInRight delay-550ms')
             $('.call-btn').css('color','#1e4004')
             $('.phone-i').css('border','1px solid #1e4004')
             $('.phone-num').css('color','#1e4004')
@@ -73,12 +74,12 @@
         });
 
         $(".fa-times").click(function () {
-            $('#menu-01').removeClass(' '+'animated fadeInRight delay-11s')
-            $('#menu-02').removeClass(' '+'animated fadeInRight delay-12s')
-            $('#menu-03').removeClass(' '+'animated fadeInRight delay-13s')
-            $('#menu-04').removeClass(' '+'animated fadeInRight delay-14s')
-            $('#menu-05').removeClass(' '+'animated fadeInRight delay-15s')
-            $('#menu-06').removeClass(' '+'animated fadeInRight delay-16s')
+            $('#menu-01').removeClass(' '+'animated fadeInRight delay-300ms')
+            $('#menu-02').removeClass(' '+'animated fadeInRight delay-350ms')
+            $('#menu-03').removeClass(' '+'animated fadeInRight delay-400ms')
+            $('#menu-04').removeClass(' '+'animated fadeInRight delay-450ms')
+            $('#menu-05').removeClass(' '+'animated fadeInRight delay-500ms')
+            $('#menu-06').removeClass(' '+'animated fadeInRight delay-550ms')
             $('.phone-num').css('color','white')
             $('.phone-i').css('border','1px solid white')
             $('.call-btn').css('color','white')

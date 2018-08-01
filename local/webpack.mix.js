@@ -17,7 +17,7 @@ mix
         'bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css',
         'bower_components/Ionicons/css/ionicons.min.css',
         'bower_components/fancybox/dist/jquery.fancybox.min.css',
-        'bower_components/animate.css/animate.min.css',
+        'bower_components/animate.css/animate.css',
     ], '../css/core.common.css')
 
     //JS CORE FRONTEND

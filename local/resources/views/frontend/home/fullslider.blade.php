@@ -72,7 +72,6 @@
     div#section0 h5, div#section0 h6 {
         color: white;
         text-shadow: 1px 1px 8px #0b2e13;
-        font-size: 6vw;
         margin: auto;
 
     }
@@ -87,6 +86,7 @@
         position: relative;
         width: fit-content;
         margin-bottom: 10px;
+        font-size: 5vw;
     }
 
     div#section0 h5:before {
@@ -130,7 +130,7 @@
 
     div#section2 p {
         font-size: 18px;
-        text-shadow: 1px 1px 30px #000;
+        text-shadow: 1px 1px 50px #000;
         /*background-color: rgba(00,00,00,0.3);*/
     }
 
@@ -492,10 +492,18 @@
 
         <img src="{{URL::asset('imgs/logo/logo2.png')}}" alt="" class="logo animated fadeIn slower">
 
-        <div data-menuanchor="firstPage" class="active d-flex align-items-center">
+        <div class="d-flex justify-content-between pl-3 pr-3 pt-3 pb-1 align-items-center"
+             style="width:100%;position: absolute;bottom: 0;left: 0;">
+        <div class="d-flex align-items-center">
                 Copyright © 2018 by <b>	&nbsp; Smartlinks</b>.
             <a class="scnw ml-3" href=""><i class="fab fa-facebook-f"></i></a>
             <a class="scnw ml-3" href=""><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="call-btn d-flex align-items-center">
+            <div class="pr-3"><i class="fas fa-phone phone-i"></i></div>
+            <a style="font-size: 22px;font-weight: 500" class="phone-num">0909 86 86 86</a>
+        </div>
         </div>
 
 
@@ -524,10 +532,7 @@
             </p>
         </div>
 
-        <div data-menuanchor="3rdPage" class="call-btn d-flex align-items-center">
-            <div class="pr-3"><i class="fas fa-phone phone-i"></i></div>
-            <a href="#3rdPage" style="font-size: 22px;font-weight: 500" class="phone-num">0909 86 86 86</a>
-        </div>
+
     </div>
 
     <div class="section position-relative" id="section0">
@@ -558,7 +563,7 @@
         <div id="section3-slide" class="intro position-relative">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center" style="margin: auto">
+                    <div class="col-md-6 text-center" style="margin: auto;">
                         <h5>CHƯƠNG TRÌNH ƯU ĐÃI</h5>
                         <p class="" style="background-color:rgba(00,00,00,0,3);">Trã trước 30% hỗ trợ vai 70% từ ngân hàng <br>
                         Chương trình được áp dụng từ tháng 08-1028 đến tháng 12-2018 <br>

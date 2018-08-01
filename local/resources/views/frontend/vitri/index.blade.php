@@ -551,7 +551,7 @@
 
     @include('frontend.home.btn_NhanThongTinDuAn')
 
-    <div id="fullpage">
+    <div id="fullpage" class="">
         <div id="menu" class="d-flex justify-content-between align-items-center">
 
             <img src="{{URL::asset('imgs/logo/logo2.png')}}" alt="" class="logo animated fadeIn slower">
