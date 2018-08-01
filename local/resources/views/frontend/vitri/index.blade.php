@@ -70,6 +70,7 @@
         {{--background-size: cover;--}}
         {{--background-position: center center;--}}
 
+
         }
 
         div#section0 h5, div#section0 h6 {
@@ -105,14 +106,12 @@
 
         }
 
-
         div#trang_dau {
             height: 100vh;
             width: 26%;
             background-color: #003d26;
             transition: .3s;
             opacity: 1;
-            padding-top: 286px;
             float: left;
         }
 
@@ -244,11 +243,10 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color:transparent;
-            -webkit-animation:  example1 1s; /* Safari 4.0 - 8.0 */
+            background-color: transparent;
+            -webkit-animation: example1 1s; /* Safari 4.0 - 8.0 */
             animation: example1 1s;
         }
-
 
         .logo-duan {
             height: 86px;
@@ -262,7 +260,7 @@
 
         }
 
-        div#vitri_duan{
+        div#vitri_duan {
             height: 86px;
             width: 86px;
             border-radius: 50%;
@@ -271,15 +269,12 @@
             right: 30%;
             /*border: 5px solid rgba(255, 255, 255, 0.8);*/
             background-color: transparent;
-            -webkit-animation:  example2 1s infinite ; /* Safari 4.0 - 8.0 */
+            -webkit-animation: example2 1s infinite; /* Safari 4.0 - 8.0 */
             -webkit-animation-delay: 2s;
             animation: example2 1s infinite;
             animation-delay: 2s;
             cursor: pointer;
         }
-
-
-
 
         @media screen and (max-width: 999px) and (min-width: 652px) {
 
@@ -303,9 +298,7 @@
             }
         }
 
-
-
-        .vitri-sanbay{
+        .vitri-sanbay {
             position: absolute;
             width: 32px;
             height: 32px;
@@ -325,14 +318,13 @@
 
         }
 
-        a.vitri-sanbay:hover{
+        a.vitri-sanbay:hover {
             text-decoration: none;
             background-color: #fff;
             color: #0b2e13;
         }
 
-
-        div#vitri_sanbay{
+        div#vitri_sanbay {
             position: absolute;
             width: 32px;
             height: 32px;
@@ -346,7 +338,7 @@
 
         }
 
-        .vitri-kcn{
+        .vitri-kcn {
             position: absolute;
             width: 32px;
             height: 32px;
@@ -366,13 +358,13 @@
 
         }
 
-        a.vitri-kcn:hover{
+        a.vitri-kcn:hover {
             text-decoration: none;
             background-color: #fff;
             color: #0b2e13;
         }
 
-        div#vitri_kcn{
+        div#vitri_kcn {
             position: absolute;
             width: 32px;
             height: 32px;
@@ -386,8 +378,7 @@
 
         }
 
-
-        .vitri-tthc{
+        .vitri-tthc {
             position: absolute;
             width: 32px;
             height: 32px;
@@ -407,13 +398,13 @@
 
         }
 
-        a.vitri-tthc:hover{
+        a.vitri-tthc:hover {
             text-decoration: none;
             background-color: #fff;
             color: #0b2e13;
         }
 
-        div#vitri_tthc{
+        div#vitri_tthc {
             position: absolute;
             width: 32px;
             height: 32px;
@@ -421,12 +412,12 @@
             top: 52%;
             left: 47%;
             box-shadow: 0px 0px 15px 3px white;
-            -webkit-animation:  example 1s infinite; /* Safari 4.0 - 8.0 */
+            -webkit-animation: example 1s infinite; /* Safari 4.0 - 8.0 */
             animation: example 1s infinite;
 
         }
 
-        div#img_tthc{
+        div#img_tthc {
             position: absolute;
             width: 138px;
             height: 138px;
@@ -439,13 +430,12 @@
             border: 3px solid #0b2e13;
         }
 
-
-        a.vitri-tthc:hover + div#img_tthc{
+        a.vitri-tthc:hover + div#img_tthc {
             opacity: 1;
             transform: scale(1.5);
         }
 
-        div#img_sanbay{
+        div#img_sanbay {
             position: absolute;
             width: 138px;
             height: 138px;
@@ -458,17 +448,17 @@
             border: 3px solid #0b2e13;
         }
 
-        div#img_sanbay img,div#img_kcn img,div#img_tthc img{
+        div#img_sanbay img, div#img_kcn img, div#img_tthc img {
             width: 100%;
             height: 100%;
         }
 
-        a.vitri-sanbay:hover + div#img_sanbay{
+        a.vitri-sanbay:hover + div#img_sanbay {
             opacity: 1;
             transform: scale(1.3);
         }
 
-        div#img_kcn{
+        div#img_kcn {
             position: absolute;
             width: 138px;
             height: 138px;
@@ -481,56 +471,77 @@
             border: 3px solid #0b2e13;
         }
 
-
-        a.vitri-kcn:hover + div#img_kcn{
+        a.vitri-kcn:hover + div#img_kcn {
             opacity: 1;
             transform: scale(1.3);
         }
 
-
-
         /* Safari 4.0 - 8.0 */
         @-webkit-keyframes example {
-            from {transform: scale(1)}
-            to {transform: scale(1.8)}
+            from {
+                transform: scale(1)
+            }
+            to {
+                transform: scale(1.8)
+            }
         }
 
         /* Standard syntax */
         @keyframes example {
-            from {transform: scale(1)}
-            to {transform: scale(1.8)}
+            from {
+                transform: scale(1)
+            }
+            to {
+                transform: scale(1.8)
+            }
         }
 
         /* Safari 4.0 - 8.0 */
         @-webkit-keyframes example1 {
-            from {transform: scale(1.8)}
-            to {transform: scale(1)}
+            from {
+                transform: scale(1.8)
+            }
+            to {
+                transform: scale(1)
+            }
         }
 
         /* Standard syntax */
         @keyframes example1 {
-            from {transform: scale(1.8)}
-            to {transform: scale(1)}
+            from {
+                transform: scale(1.8)
+            }
+            to {
+                transform: scale(1)
+            }
         }
 
         /* Safari 4.0 - 8.0 */
         @-webkit-keyframes example2 {
-            from {border: 5px solid rgba(255, 255, 255, 0.8);}
-            to {border: 5px solid #0b2e13;}
+            from {
+                border: 5px solid rgba(255, 255, 255, 0.8);
+            }
+            to {
+                border: 5px solid #0b2e13;
+            }
         }
 
         /* Standard syntax */
         @keyframes example2 {
-            from {border: 5px solid rgba(255, 255, 255, 0.8);}
-            to {border: 5px solid #0b2e13;}
+            from {
+                border: 5px solid rgba(255, 255, 255, 0.8);
+            }
+            to {
+                border: 5px solid #0b2e13;
+            }
         }
 
-        h5.title-vitri{
+        h5.title-vitri {
             color: white;
             position: fixed;
             z-index: 1;
             top: 30px;
-            right:73px;
+            right: 73px;
             text-shadow: 1px 1px 5px #0b2e13;
         }
 
@@ -586,10 +597,17 @@
         </div>
 
         <div class="section position-relative" id="section0">
-            <div id="trang_dau" class="text-warning">
+            <div id="trang_dau" class="d-flex align-items-center justify-content-center">
                 <div class="animated fadeInLeft slow">
-                <h5 style="font-size: 33px">VỊ TRÍ ĐỘC TÔN</h5>
-                <p class="text-white pr-2">Không gian nghĩ dưỡng - thiên đường du lịch</p>
+                    <h5 style="font-size: 33px">VỊ TRÍ - TIỆN ÍCH</h5>
+                    <p class="text-white pr-4 pl-2">
+                        {{--Không gian nghĩ dưỡng - thiên đường du lịch--}}
+                        Được ví như trái tim Vũng Tàu, Sea Dragon chỉ cách “nửa bước chân”
+                        để kết nối đến khu đô thị tiện ích xung quanh. Sea Dragon thừa hưởng
+                        tiện ích từ hàng loạt dự án danh tiếng liền kề,
+                        các tổ hợp trung tâm thương mại, văn phòng và hệ
+                        thống trường học đẳng cấp quốc tế.
+                    </p>
                 </div>
             </div>
             <div id="img_vitri" class="text-warning">
@@ -625,7 +643,6 @@
                     <div id="img_tthc">
                         <img src="{{URL::asset('imgs/tienich-vitri/tthc.jpg')}}" alt="">
                     </div>
-
 
 
                 </div>
@@ -691,11 +708,11 @@
             div.animate({right: '0', opacity: '1'}, "slow");
             $('.fa-bars').css('display', 'none');
             $('.fa-times').css('display', 'block');
-            $('h5.title-vitri').css({'opacity':'0','top':'22px'})
+            $('h5.title-vitri').css({'opacity': '0', 'top': '22px'})
         });
 
         $(".fa-times").click(function () {
-            $('h5.title-vitri').css({'opacity':'1'})
+            $('h5.title-vitri').css({'opacity': '1'})
             $('#menu-01').removeClass(' ' + 'animated fadeInRight delay-11s')
             $('#menu-02').removeClass(' ' + 'animated fadeInRight delay-12s')
             $('#menu-03').removeClass(' ' + 'animated fadeInRight delay-13s')

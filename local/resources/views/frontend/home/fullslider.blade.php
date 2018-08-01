@@ -78,7 +78,7 @@
     }
 
     div#section0 h6 {
-        font-size: 2vw;
+        font-size: 22px;
         color: white;
     }
 
@@ -125,12 +125,13 @@
         background-size: cover;
         background-position: center center;
         color: white;
-        text-shadow: 1px 1px 33px #000;
+        /*text-shadow: 1px 1px 33px #000;*/
     }
 
     div#section2 p {
-        font-size: 16px;
-        text-shadow: 1px 1px 13px #000;
+        font-size: 18px;
+        text-shadow: 1px 1px 30px #000;
+        /*background-color: rgba(00,00,00,0.3);*/
     }
 
     div#section2 h5 {
@@ -559,7 +560,7 @@
                 <div class="row">
                     <div class="col-md-6 text-center" style="margin: auto">
                         <h5>CHƯƠNG TRÌNH ƯU ĐÃI</h5>
-                        <p class="">Trã trước 30% hỗ trợ vai 70% từ ngân hàng <br>
+                        <p class="" style="background-color:rgba(00,00,00,0,3);">Trã trước 30% hỗ trợ vai 70% từ ngân hàng <br>
                         Chương trình được áp dụng từ tháng 08-1028 đến tháng 12-2018 <br>
                         Ữu đãi nội thất cho 50 khách hàng đầu tiên.</p>
                         <a href="">XEM CHI TIẾT</a>
