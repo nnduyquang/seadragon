@@ -24,7 +24,7 @@
             left: 20px;
             top: 15px;
             z-index: 21;
-            width: 238px;
+            width: 186px;
             height: auto;
             transition: .3s;
         }
@@ -86,9 +86,10 @@
         }
 
         div#section0 h5 {
+            text-align: left;
+            width: fit-content;
             font-family: 'Asap Condensed', sans-serif;
             position: relative;
-            width: fit-content;
             margin-bottom: 10px;
         }
 
@@ -104,35 +105,15 @@
 
         }
 
-        div#section0 a {
-            border: 1px solid white;
-            color: white;
-            font-size: 13px;
-            padding: 8px 10px;
-            background-color: rgba(32, 57, 2, 0.9);
-            font-weight: 600;
-            transition: .3s;
-            text-shadow: 1px 1px 1px #012392;
-        }
-
-        div#section0 a:hover {
-            text-decoration: none;
-            color: white;
-            background-color: #f3ca0d;
-            border: 1px solid #f3ca0d;
-        }
 
         div#trang_dau {
             height: 100vh;
             width: 26%;
-            {{--background-image: url({{URL::asset('imgs/bg/bg2.jpg')}});--}}
-            {{---webkit-background-size: cover;--}}
-            {{--background-size: cover;--}}
-            {{--background-position: center center;--}}
             background-color: #003d26;
             transition: .3s;
             opacity: 1;
-
+            padding-top: 286px;
+            float: left;
         }
 
         div#menu_r {
@@ -248,37 +229,55 @@
 
         }
 
-        div#img_vitri{
+        div#img_vitri {
             position: absolute;
             height: 100vh;
             top: 0;
             right: 0;
             width: 75%;
-            /*background-image: url();*/
-            /*-webkit-background-size: 100% 100%;*/
-            /*background-size: 100% 100%;*/
-            /*background-repeat: no-repeat;*/
             overflow: hidden;
-            /*transition: .3s;*/
-            /*background-color: #003d26;*/
+
         }
-        .img-vitri-overlay{
+
+        div.img-vitri-overlay {
             transition: .1s;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color:transparent;
+            -webkit-animation:  example1 1s; /* Safari 4.0 - 8.0 */
+            animation: example1 1s;
         }
 
-        div#img_vitri:hover .img-vitri-overlay{
-         /*transform: scale(1.3);*/
-        }
 
-        .logo-duan{
+        .logo-duan {
             height: 86px;
             width: 86px;
             border-radius: 50%;
             position: absolute;
             top: 43%;
             right: 30%;
-            border: 5px solid rgba(255,255,255,0.6);
+            border: 5px solid rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+
         }
+
+        div#vitri_duan{
+            height: 86px;
+            width: 86px;
+            border-radius: 50%;
+            position: absolute;
+            top: 43%;
+            right: 30%;
+            /*border: 5px solid rgba(255, 255, 255, 0.8);*/
+            background-color: transparent;
+            -webkit-animation:  example2 1s infinite ; /* Safari 4.0 - 8.0 */
+            -webkit-animation-delay: 2s;
+            animation: example2 1s infinite;
+            animation-delay: 2s;
+            cursor: pointer;
+        }
+
 
 
 
@@ -305,9 +304,241 @@
         }
 
 
+
+        .vitri-sanbay{
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            top: 15%;
+            left: 21%;
+            border-radius: 50%;
+            font-size: 26px;
+            background-color: transparent;
+            color: white;
+            border-radius: 50%;
+            background-color: #a94c9d;
+            line-height: 26px;
+            text-align: center;
+            transition: .3s;
+            /*animation-name: example;*/
+            /*animation-iteration-count: infinite;*/
+
+        }
+
+        a.vitri-sanbay:hover{
+            text-decoration: none;
+            background-color: #fff;
+            color: #0b2e13;
+        }
+
+
+        div#vitri_sanbay{
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            top: 15%;
+            left: 21%;
+            box-shadow: 0px 0px 15px 3px white;
+            -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            animation: example 1s infinite;
+
+        }
+
+        .vitri-kcn{
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            top: 7%;
+            left: 39%;
+            border-radius: 50%;
+            font-size: 26px;
+            background-color: transparent;
+            color: white;
+            border-radius: 50%;
+            background-color: #111c87;
+            line-height: 26px;
+            text-align: center;
+            transition: .3s;
+            /*animation-name: example;*/
+            /*animation-iteration-count: infinite;*/
+
+        }
+
+        a.vitri-kcn:hover{
+            text-decoration: none;
+            background-color: #fff;
+            color: #0b2e13;
+        }
+
+        div#vitri_kcn{
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            top: 7%;
+            left: 39%;
+            box-shadow: 0px 0px 15px 3px white;
+            -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            animation: example 1s infinite;
+
+        }
+
+
+        .vitri-tthc{
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            top: 52%;
+            left: 47%;
+            border-radius: 50%;
+            font-size: 26px;
+            background-color: transparent;
+            color: white;
+            border-radius: 50%;
+            background-color: #b42e47;
+            line-height: 26px;
+            text-align: center;
+            transition: .3s;
+            /*animation-name: example;*/
+            /*animation-iteration-count: infinite;*/
+
+        }
+
+        a.vitri-tthc:hover{
+            text-decoration: none;
+            background-color: #fff;
+            color: #0b2e13;
+        }
+
+        div#vitri_tthc{
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            top: 52%;
+            left: 47%;
+            box-shadow: 0px 0px 15px 3px white;
+            -webkit-animation:  example 1s infinite; /* Safari 4.0 - 8.0 */
+            animation: example 1s infinite;
+
+        }
+
+        div#img_tthc{
+            position: absolute;
+            width: 138px;
+            height: 138px;
+            border-radius: 50%;
+            top: 52%;
+            left: 28%;
+            overflow: hidden;
+            opacity: 0;
+            transition: .3s;
+            border: 3px solid #0b2e13;
+        }
+
+
+        a.vitri-tthc:hover + div#img_tthc{
+            opacity: 1;
+            transform: scale(1.5);
+        }
+
+        div#img_sanbay{
+            position: absolute;
+            width: 138px;
+            height: 138px;
+            border-radius: 50%;
+            top: 5%;
+            left: 3%;
+            overflow: hidden;
+            opacity: 0;
+            transition: .3s;
+            border: 3px solid #0b2e13;
+        }
+
+        div#img_sanbay img,div#img_kcn img,div#img_tthc img{
+            width: 100%;
+            height: 100%;
+        }
+
+        a.vitri-sanbay:hover + div#img_sanbay{
+            opacity: 1;
+            transform: scale(1.3);
+        }
+
+        div#img_kcn{
+            position: absolute;
+            width: 138px;
+            height: 138px;
+            border-radius: 50%;
+            top: 5%;
+            left: 47%;
+            overflow: hidden;
+            opacity: 0;
+            transition: .3s;
+            border: 3px solid #0b2e13;
+        }
+
+
+        a.vitri-kcn:hover + div#img_kcn{
+            opacity: 1;
+            transform: scale(1.3);
+        }
+
+
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes example {
+            from {transform: scale(1)}
+            to {transform: scale(1.8)}
+        }
+
+        /* Standard syntax */
+        @keyframes example {
+            from {transform: scale(1)}
+            to {transform: scale(1.8)}
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes example1 {
+            from {transform: scale(1.8)}
+            to {transform: scale(1)}
+        }
+
+        /* Standard syntax */
+        @keyframes example1 {
+            from {transform: scale(1.8)}
+            to {transform: scale(1)}
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes example2 {
+            from {border: 5px solid rgba(255, 255, 255, 0.8);}
+            to {border: 5px solid #0b2e13;}
+        }
+
+        /* Standard syntax */
+        @keyframes example2 {
+            from {border: 5px solid rgba(255, 255, 255, 0.8);}
+            to {border: 5px solid #0b2e13;}
+        }
+
+        h5.title-vitri{
+            color: white;
+            position: fixed;
+            z-index: 1;
+            top: 30px;
+            right:73px;
+            text-shadow: 1px 1px 5px #0b2e13;
+        }
+
+
     </style>
     <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Saira+Extra+Condensed" rel="stylesheet">
 
+    @include('frontend.home.btn_NhanThongTinDuAn')
 
     <div id="fullpage">
         <div id="menu" class="d-flex justify-content-between align-items-center">
@@ -323,7 +554,7 @@
 
             <div class="menu-content">
                 <ul>
-                    <li id="menu-01"><a  href="{{URL::asset('/')}}">TRANG CHỦ</a></li>
+                    <li id="menu-01"><a href="{{URL::asset('/')}}">TRANG CHỦ</a></li>
                     <li id="menu-02" class=""><a href="thong-tin-du-an-sea-dragon.html">GIỚI THIỆU</a></li>
                     <li id="menu-03"><a class="active" href="">VỊ TRÍ</a></li>
                     <li id="menu-04"><a href="">GIÁ CHƯƠNG TRÌNH ƯU ĐÃI</a></li>
@@ -338,6 +569,8 @@
                 <button id="btn_nhantt">NHẬN THÔNG TIN DỰ ÁN</button>
             </div>
 
+            <h5 style=""
+                class="animated flipInX slow title-vitri">VỊ TRÍ</h5>
             <div id="menu_r">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-times"></i>
@@ -354,14 +587,47 @@
 
         <div class="section position-relative" id="section0">
             <div id="trang_dau" class="text-warning">
-
+                <div class="animated fadeInLeft slow">
+                <h5 style="font-size: 33px">VỊ TRÍ ĐỘC TÔN</h5>
+                <p class="text-white pr-2">Không gian nghĩ dưỡng - thiên đường du lịch</p>
+                </div>
             </div>
             <div id="img_vitri" class="text-warning">
-                <div id="elem" class="img-vitri-overlay" style="width: 100%;height: 100%;overflow: hidden;background-color:transparent;" class="position-relative">
-                    <img  src="{{URL::asset('imgs/tienich-vitri/vitri.png')}}" alt="" style="width: 100%;height: 100%">
-                    <img src="{{URL::asset('imgs/logo/logo1.png')}}" alt="" style="" class="animated fadeInDownBig logo-duan">
+                <div id="elem" class="img-vitri-overlay"
+                     style=""
+                     class="position-relative">
+                    <img src="{{URL::asset('imgs/tienich-vitri/vitri.jpg')}}" alt="" style="width: 100%;height: 100%">
 
-                    <a href="javascript:void(0)">+</a>
+                    <img src="{{URL::asset('imgs/logo/logo1.png')}}" alt="" style=""
+                         class="animated bounceInDown delay-1s logo-duan">
+
+                    <div id="vitri_duan">
+                    </div>
+                    <div id="vitri_sanbay">
+                    </div>
+                    <a class="vitri-sanbay" href="javascript:void(0)" style="">+</a>
+                    <div id="img_sanbay">
+                        <img src="{{URL::asset('imgs/tienich-vitri/sblongthanh.jpg')}}" alt="">
+                    </div>
+
+                    <div id="vitri_kcn">
+                    </div>
+                    <a class="vitri-kcn" href="javascript:void(0)" style="">+</a>
+                    <div id="img_kcn">
+                        <img src="{{URL::asset('imgs/tienich-vitri/kcn.jpg')}}" alt="">
+                    </div>
+
+                    <div id="vitri_tthc">
+                    </div>
+                    <img src="" alt="">
+                    <a class="vitri-tthc" href="javascript:void(0)" style="">+</a>
+
+                    <div id="img_tthc">
+                        <img src="{{URL::asset('imgs/tienich-vitri/tthc.jpg')}}" alt="">
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
@@ -425,9 +691,11 @@
             div.animate({right: '0', opacity: '1'}, "slow");
             $('.fa-bars').css('display', 'none');
             $('.fa-times').css('display', 'block');
+            $('h5.title-vitri').css({'opacity':'0','top':'22px'})
         });
 
         $(".fa-times").click(function () {
+            $('h5.title-vitri').css({'opacity':'1'})
             $('#menu-01').removeClass(' ' + 'animated fadeInRight delay-11s')
             $('#menu-02').removeClass(' ' + 'animated fadeInRight delay-12s')
             $('#menu-03').removeClass(' ' + 'animated fadeInRight delay-13s')
@@ -450,20 +718,20 @@
 
     {{--script choh full page load và các hiệu ứng lên và xuống--}}
     <script type="text/javascript">
-        var s=1;
+        var s = 1;
 
         $('#elem').on('DOMMouseScroll mousewheel', function (e) {
 
-            if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+            if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
                 //scroll down
-                if(s>1){
-                s=s-0.1;
-                $('#elem').css('transform','scale('+s+')')
+                if (s > 1) {
+                    s = s - 0.1;
+                    $('#elem').css('transform', 'scale(' + s + ')')
                 }
 
             } else {
                 //scroll up
-                if(s<1.7) {
+                if (s < 1.7) {
                     s = s + 0.1;
                     $('#elem').css('transform', 'scale(' + s + ')')
                 }

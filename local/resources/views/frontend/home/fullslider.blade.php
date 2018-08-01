@@ -546,7 +546,7 @@
                         <p class="">Sea Dragon tọa lạc về Phía Đông Nam của trung tâm hành chính tỉnh,
                             <br> nằm trong bán kính 5km được quy hoạch về khu dân cư đô thị phục vụ cho sự phát triển
                             <br>lên đô thị loại 1 của thành phố. ...</p>
-                        <a href="">XEM CHI TIẾT</a>
+                        <a href="{{URL::asset('vitri.html')}}">XEM CHI TIẾT</a>
                     </div>
                 </div>
             </div>
