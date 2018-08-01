@@ -128,14 +128,6 @@
 
     }
 
-    div#section1 {
-        {{--background-image: url({{URL::asset('imgs/Biet-thu.jpg')}});--}}
-        {{---webkit-background-size: cover;--}}
-        {{--background-size: cover;--}}
-        {{--background-position: center center;--}}
-        {{--text-shadow: 1px 1px 1px #0b2e13;--}}
-        {{--font-family: 'Asap Condensed', sans-serif;--}}
-    }
 
     div#section1 h2 {
         font-size: 38px;
@@ -145,15 +137,6 @@
         font-size: 13px;
     }
 
-    div#section2 {
-        {{--font-family: 'Asap Condensed', sans-serif;--}}
-        {{--background-image: url({{URL::asset('imgs/bg3.jpg')}});--}}
-        {{---webkit-background-size: cover;--}}
-        {{--background-size: cover;--}}
-        {{--background-position: center center;--}}
-        {{--color: white;--}}
-        {{--text-shadow: 1px 1px 1px #0b2e13;--}}
-    }
 
     div#section2 p {
         font-size: 13px;
@@ -360,7 +343,7 @@
     }
 
     #gioi-thieu-du-an p{
-        padding: 20px 18px 20px 40px;
+        padding: 20px 18px 20px 30px;
         color: #76a603;
         font-size: 13px;
         height: 68%;
@@ -376,7 +359,7 @@
     }
 
     #tt-du-an p{
-        padding: 20px 18px 20px 40px;
+        padding: 20px 18px 20px 30px;
         color: #76a603;
         font-size: 13px;
         height: 68%;
@@ -392,7 +375,7 @@
     }
 
     #cdt-du-an p{
-        padding: 20px 18px 20px 40px;
+        padding: 20px 18px 20px 30px;
         color: #76a603;
         font-size: 13px;
         height: 68%;
