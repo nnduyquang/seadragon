@@ -488,19 +488,20 @@
 {{--phần full page js--}}
 
 <div id="fullpage">
+
     <div id="menu" class="d-flex justify-content-between align-items-center">
 
-        <img src="{{URL::asset('imgs/logo/logo2.png')}}" alt="" class="logo animated fadeIn slower">
+        <img src="{{URL::asset('imgs/logo/logo2.png')}}" alt="" class="logo animated fadeIn slower d-lg-block d-none">
 
-        <div class="d-flex justify-content-between pl-3 pr-3 pt-3 pb-1 align-items-center"
+        <div class=" d-flex justify-content-between pl-3 pr-3 pt-3 pb-1 align-items-center"
              style="width:100%;position: absolute;bottom: 0;left: 0;">
-        <div class="d-flex align-items-center">
+        <div class="d-none d-lg-block d-md-block">
                 Copyright © 2018 by <b>	&nbsp; Smartlinks</b>.
             <a class="scnw ml-3" href=""><i class="fab fa-facebook-f"></i></a>
             <a class="scnw ml-3" href=""><i class="fab fa-youtube"></i></a>
         </div>
 
-        <div class="call-btn d-flex align-items-center">
+        <div class="call-btn align-items-center d-none d-lg-flex ">
             <div class="pr-3"><i class="fas fa-phone phone-i"></i></div>
             <a style="font-size: 22px;font-weight: 500" class="phone-num">0909 86 86 86</a>
         </div>
@@ -511,7 +512,7 @@
             <ul>
                 <li id="menu-01"><a class="active" href="">TRANG CHỦ</a></li>
                 <li id="menu-02" class=""><a href="thong-tin-du-an-sea-dragon.html">GIỚI THIỆU</a></li>
-                <li id="menu-03"><a href="">VỊ TRÍ</a></li>
+                <li id="menu-03"><a href="{{URL::asset('vitri.html')}}">VỊ TRÍ</a></li>
                 <li id="menu-04"><a href="">GIÁ CHƯƠNG TRÌNH ƯU ĐÃI</a></li>
                 <li id="menu-05"><a href="">PHÁP LÝ THANH TOÁN</a></li>
                 <li id="menu-06"><a href="">LIÊN HỆ ĐẬT CHỔ</a></li>

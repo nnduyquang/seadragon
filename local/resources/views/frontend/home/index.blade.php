@@ -5,11 +5,12 @@
     @include('frontend.home.btn_NhanThongTinDuAn')
     @include('frontend.home.fullslider')
 
+
 @stop
 @section('script-private')
     <script>
         $(document).ready(function () {
-            
+
             $('.fa-play-circle').css('display','none')
             //Script hiện bản thoong báo đầu trang page load
             $('.tat-baogia').css('display','block')
