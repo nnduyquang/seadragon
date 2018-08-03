@@ -579,7 +579,7 @@
 
     <div class="section" id="section3">
         <video id="myVideo" loop data-autoplay>
-            <source src="http://sky89.vn/download/PHIM CHINH THUC.mp4"
+            <source src="{{URL::asset('imgs/video/videoplayback.mp4')}}"
                     type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
         </video>
         <div class="layer pb-5">
