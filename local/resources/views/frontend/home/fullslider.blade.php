@@ -22,7 +22,7 @@
         left: 20px;
         top: 15px;
         z-index: 21;
-        width: 260px;
+        width: 238px;
         height: auto;
         transition: .3s;
     }

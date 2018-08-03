@@ -20,48 +20,35 @@
 
             onLeave: function (origin, destination, direction) {
                 //it won't scroll if the destination is the 3rd section
-                if ((origin.index == 0) && direction == 'down'){
+                if (destination.index == 2){
+                    $('#active3').css('background-color','#0b2e13');
+                    $('#active2').css('background-color','#76a603');
                     $('#active1').css('background-color','#76a603');
+                    $('#gioi-thieu-du-an p').css('display','none');
+                    $('#tt-du-an p').css('display','none');
+                    $('#cdt-du-an p').css('display','block');
+                    $('#cdt-du-an p').addClass(' '+'animated fadeInRight delay-350ms')
+                }
+                else if (destination.index == 1) {
+                    $('#active3').css('background-color','#76a603');
                     $('#active2').css('background-color','#0b2e13');
+                    $('#active1').css('background-color','#76a603');
                     $('#gioi-thieu-du-an p').css('display','none');
                     $('#tt-du-an p').css('display','block');
-                    $('#tt-du-an p').addClass(' '+'animated fadeInRight delay-350ms');
-                }
-                else if (origin.index == 0 && direction == 'up') {
-                    $('#active3').css('background-color','#0b2e13');
-                    $('#active1').css('background-color','#76a603');
-                    $('#gioi-thieu-du-an p').css('display','none');
-                    $('#cdt-du-an p').css('display','block');
-                    $('#cdt-du-an p').addClass(' '+'animated fadeInRight delay-350ms');
-                }
-                else if (origin.index == 1 && direction == 'up') {
-                    $('#active1').css('background-color','#0b2e13')
-                    $('#active2').css('background-color','#76a603')
-                    $('#tt-du-an p').css('display','none')
-                    $('#gioi-thieu-du-an p').css('display','block')
-                    $('#gioi-thieu-du-an p').addClass(' '+'animated fadeInRight delay-350ms')
-                } else if ((origin.index == 1) && direction == 'down') {
-                    $('#active3').css('background-color','#0b2e13')
-                    $('#active2').css('background-color','#76a603')
-                    $('#tt-du-an p').css('display','none')
-                    $('#cdt-du-an p').css('display','block')
-                    $('#cdt-du-an p').addClass(' '+'animated fadeInRight delay-350ms')
-
-                } else if ((origin.index == 2) && direction == 'up'){
-                    $('#active2').css('background-color','#0b2e13')
-                    $('#active3').css('background-color','#76a603')
-                    $('#cdt-du-an p').css('display','none')
-                    $('#tt-du-an p').css('display','block')
                     $('#tt-du-an p').addClass(' '+'animated fadeInRight delay-350ms')
-                } else if ((origin.index == 2) && direction == 'down') {
-                    $('#active1').css('background-color','#0b2e13')
-                    $('#active3').css('background-color','#76a603')
-                    $('#cdt-du-an p').css('display','none')
-                    $('#gioi-thieu-du-an p').css('display','block')
-                    $('#gioi-thieu-du-an p').addClass(' '+'animated fadeInRight delay-350ms')
+                    $('#cdt-du-an p').css('display','none');
+
                 }
+                else if (destination.index == 0) {
+                    $('#active3').css('background-color','#76a603');
+                    $('#active2').css('background-color','#76a603');
+                    $('#active1').css('background-color','#0b2e13');
+                    $('#gioi-thieu-du-an p').css('display','block');
+                    $('#gioi-thieu-du-an p').addClass(' '+'animated fadeInRight delay-350ms')
+                    $('#tt-du-an p').css('display','none');
+                    $('#cdt-du-an p').css('display','none');
 
-
+                }
 
             }
 

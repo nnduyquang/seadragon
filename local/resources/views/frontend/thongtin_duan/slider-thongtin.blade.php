@@ -23,7 +23,7 @@
         left: 20px;
         top: 15px;
         z-index: 21;
-        width: 260px;
+        width: 218px;
         height: auto;
 
     }
@@ -239,7 +239,7 @@
         color: #3d8d00;
     }
 
-    li#menu-02 a.active {
+    li#menu-02 .active {
         color: #3d8d00;
     }
 
@@ -439,7 +439,7 @@
         <div class="menu-content shadow-lg">
             <ul>
                 <li id="menu-01"><a class="" href="{{URL::asset('/')}}">TRANG CHỦ</a></li>
-                <li id="menu-02"><a class="active" href="thong-tin-du-an-sea-dragon.html">GIỚI THIỆU</a></li>
+                <li id="menu-02"><a style="color: #3d8d00;" href="thong-tin-du-an-sea-dragon.html">GIỚI THIỆU</a></li>
                 <li id="menu-03"><a href="{{URL::asset('/vitri.html')}}">VỊ TRÍ</a></li>
                 <li id="menu-04"><a href="">GIÁ CHƯƠNG TRÌNH ƯU ĐÃI</a></li>
                 <li id="menu-05"><a href="">PHÁP LÝ THANH TOÁN</a></li>
